@@ -66,11 +66,11 @@ function wpf_dev_cond_time() {
 						fullDates.push(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][parseInt(arr[1]) - 1] + " " + parseInt(arr[0]) + ", " + arr[2]);
 					}
 					
-					if (slots.length > 16 && slots.length <= 20) {
+					if (slots.length > 14 && slots.length <= 18) {
 						almostfullDates.push(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][parseInt(arr[1]) - 1] + " " + parseInt(arr[0]) + ", " + arr[2]);
 					}
 					
-					if (slots.length > 10 && slots.length <= 16) {
+					if (slots.length > 8 && slots.length <= 14) {
 						halffullDates.push(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][parseInt(arr[1]) - 1] + " " + parseInt(arr[0]) + ", " + arr[2]);
 					}
 				}
@@ -234,7 +234,7 @@ function wc_get_date_json() {
 	  CURLOPT_RETURNTRANSFER => true,
 	  CURLOPT_ENCODING => "",
 	  CURLOPT_MAXREDIRS => 10,
-	  CURLOPT_TIMEOUT => 10,
+	  CURLOPT_TIMEOUT => 15,
 	  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	  CURLOPT_CUSTOMREQUEST => "GET"
 	]);
